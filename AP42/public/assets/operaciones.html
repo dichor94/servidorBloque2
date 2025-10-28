@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operaciones</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Nombre</td>
+        <td style="width: auto">Operación</td>
+
+    </tr>
+    <?php foreach ($userOperations as $user){ ?>
+    <tr>
+
+        <td><?php echo htmlspecialchars($user->getName()); ?></td>
+            <?php foreach ($user->getOperations() as $operation){ ?>
+
+                <td><?php echo $operation->getResult();?></td>
+
+
+            <?php } ?>
+    </tr>
+    <?php } ?>
+</table>
+</body>
+</html>
+

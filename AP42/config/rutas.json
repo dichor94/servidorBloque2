@@ -1,0 +1,15 @@
+{
+  "/": {
+    "controller": "TareasController",
+    "action": "list"
+  },
+  "/operaciones": {
+    "controller": "OperationController",
+    "action": "operation"
+  },
+  "/usuarios": {
+
+    "controller": "UserController",
+    "action": "user"
+  }
+}
